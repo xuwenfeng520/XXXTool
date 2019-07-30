@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
 
   spec.source       = { :git => "https://github.com/xuwenfeng520/XXXTool.git", :tag => spec.version }
+  
 
   spec.requires_arc = true
 
