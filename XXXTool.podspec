@@ -13,13 +13,15 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://github.com/xuwenfeng520"
   spec.platform     = :ios, "9.0"
 
-  spec.source       = { :git => "https://github.com/xuwenfeng520/XXXTool.git", :tag => spec.version }
+#  spec.source       = { :git => "https://github.com/xuwenfeng520/XXXTool.git", :tag => spec.version }
+  spec.source       = { :git => "", :tag => spec.version }
   
 
   spec.requires_arc = true
 
-spec.source_files  = "XXXTool/**/*.{h,m}"
-
+#spec.source_files  = "XXXTool"
+spec.source_files  = "XXXTool/Classes/**/*"
+#spec.source_files  = "XXXTool","XXXTool/Classes/**/*"
 
   # spec.dependency "JSONKit", "~> 1.4"
 

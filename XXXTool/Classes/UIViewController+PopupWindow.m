@@ -32,6 +32,6 @@
 }
 
 - (void)showRemindWithmessage:(NSString*)message{
-    [self showRemindWithTitle:message message:nil YESName:loadStr(@"确定") NOName:nil YESBlock:nil NOBlock:nil];
+    [self showRemindWithTitle:message message:nil YESName:@"确定" NOName:nil YESBlock:nil NOBlock:nil];
 }
 @end
