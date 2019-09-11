@@ -21,4 +21,14 @@
  *  @return 返回一个UILabel*对象
  */
 +(instancetype)xwf_labelWithText:(NSString *)text andFontSize:(NSInteger)fontSize andColor:(UIColor *)color;
+    
+    /**
+     创建Label
+     
+     @param str 文字
+     @param Color 颜色
+     @param Font 字号
+     @return 返回Label
+     */
++(UILabel*)xxxLabelCreateWithStr:(NSString*)str Color:(UIColor*)Color Font:(CGFloat)Font;
 @end

@@ -9,12 +9,12 @@
 #import "UILabel+XwfAddition.h"
 
 @implementation UILabel (XwfAddition)
-/*
- 这个方法相当于给UILabel添加了一个快速创建它对象的类方法，并且有指定构造参数
- 
- 因为很多地方都需要创建label，并且需要设置它的文本、颜色、字体，因此我们封装这个方法
- 后面再创建label的时候就可以节省少写很多代码
- */
+    /*
+     这个方法相当于给UILabel添加了一个快速创建它对象的类方法，并且有指定构造参数
+     
+     因为很多地方都需要创建label，并且需要设置它的文本、颜色、字体，因此我们封装这个方法
+     后面再创建label的时候就可以节省少写很多代码
+     */
 +(instancetype)xwf_labelWithText:(NSString *)text andFontSize:(NSInteger)fontSize andColor:(UIColor *)color{
     
     //创建Label
@@ -31,5 +31,13 @@
     
     return lbl;
     
+}
+    
++(UILabel*)xxxLabelCreateWithStr:(NSString*)str Color:(UIColor*)Color Font:(CGFloat)Font{
+    UILabel *lab = [UILabel new];
+    lab.text = str;
+    lab.textColor = Color;
+    lab.font = [UIFont systemFontOfSize:Font];
+    return lab;
 }
 @end
