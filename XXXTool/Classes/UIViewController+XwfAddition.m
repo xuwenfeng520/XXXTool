@@ -9,6 +9,26 @@
 #import "UIViewController+XwfAddition.h"
 
 @implementation UIViewController (XwfAddition)
+
+//将对象保存到本地沙盒
++(void)saveObjc:(NSObject*)objc name:(NSString*)name{
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)lastObject];
+    NSString *accountPath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.data",name]];
+    //存
+    [NSKeyedArchiver archiveRootObject:objc toFile:accountPath];
+}
+//从bundle文件中获取对象
++(NSObject*)getObjcWithName:(NSString*)name{
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"data"];
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+}
+//复制对象
++(NSObject*)copyWithObjcL:(NSObject*)objc{
+    return [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:objc]];
+}
+
+
+
 +(void)setShadowForView:(UIView*)view Opacity:(float)Opacity Radius:(CGFloat)Radius{
     //    self.backgroundColor = [UIColor whiteColor];
     view.layer.masksToBounds = NO;

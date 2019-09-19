@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (XwfAddition)
+//将对象保存到本地沙盒
++(void)saveObjc:(NSObject*)objc name:(NSString*)name;
+//从bundle文件中获取对象
++(NSObject*)getObjcWithName:(NSString*)name;
+//复制对象
++(NSObject*)copyWithObjcL:(NSObject*)objc;
+
     /**
      设置阴影
      

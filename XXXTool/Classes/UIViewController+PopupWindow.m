@@ -87,9 +87,9 @@
         //获取第1个输入框；
         UITextField *userNameTextField = alertController.textFields.firstObject;
         NSString *strr = userNameTextField.text;
-//        if(strr.length<1)strr = nil;
-//        if(yesBlock)yesBlock(strr);
-        if(yesBlock)yesBlock(@"很黄很暴力");
+        if(strr.length<1)strr = nil;
+        if(yesBlock)yesBlock(strr);
+//        if(yesBlock)yesBlock(@"很黄很暴力");
         
     }]];
     
