@@ -9,6 +9,21 @@
 #import "UIViewController+XwfAddition.h"
 
 @implementation UIViewController (XwfAddition)
+//    self.mod.mapName = [NSString stringWithFormat:@"%@(WX_X)",self.mod.mapName];
+//    NSString *str = @"(王夏_X).data";     //记得将Select改为NO
+//    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)lastObject];
+//    NSString *accountPath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@%@",self.mod.mapName,str]];
+// 存
+//    [NSKeyedArchiver archiveRootObject:self.mod toFile:accountPath];
+// 读
+//    LSDMappingCellModel *account = [NSKeyedUnarchiver unarchiveObjectWithFile:accountPath];
+//    NSLog(@"%@",account.mapName);
+//
+//
+//测试 不用管
+//    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.mod];
+//    LSDMappingCellModel *account = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+
 
 //将对象保存到本地沙盒
 +(void)saveObjc:(NSObject*)objc name:(NSString*)name{
