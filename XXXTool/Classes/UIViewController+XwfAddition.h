@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define KViewController [UIViewController new]
 @interface UIViewController (XwfAddition)
 //将对象保存到本地沙盒
 +(void)saveObjc:(NSObject*)objc name:(NSString*)name;
@@ -16,30 +16,20 @@
 //复制对象
 +(NSObject*)copyWithObjcL:(NSObject*)objc;
 
-    /**
-     设置阴影
-     
-     @param view 视图
-     */
+
+//设置阴影
 +(void)setShadowForView:(UIView*)view Opacity:(float)Opacity Radius:(CGFloat)Radius;
-    
-    /**
-     设置圆角
-     
-     @param radius 弧度
-     @param line 描边
-     @param color 颜色
-     @param view 视图
-     */
+//设置圆角 radius 弧度 line 描边 color 颜色 view 视图
 +(void)setCornerRadius:(int)radius line:(int)line lineColor:(UIColor*)color ForView:(UIView*)view;
-    
-    /**
-     设置圆角
-     
-     @param radius 弧度
-     @param view 视图
-     */
+//设置圆角 radius 弧度 view 视图
 +(void)setCornerRadius:(int)radius ForView:(UIView*)view;
+//判断是不是平板
 + (BOOL)getIsIpad;
+//判断设备是不是ipad
+- (NSString*)deviceVersion;
+//隐藏tab推出控制器
+-(void)hiddenTbaBarPushViewController:(UIViewController*)viewController;
+//判断屏幕类型尺寸
+-(NSString*)judgmentScreenType;
 @end
 

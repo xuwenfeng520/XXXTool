@@ -7,23 +7,8 @@
 //
 
 #import "UIViewController+XwfAddition.h"
-
+#import "sys/utsname.h"
 @implementation UIViewController (XwfAddition)
-//    self.mod.mapName = [NSString stringWithFormat:@"%@(WX_X)",self.mod.mapName];
-//    NSString *str = @"(王夏_X).data";     //记得将Select改为NO
-//    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)lastObject];
-//    NSString *accountPath = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@%@",self.mod.mapName,str]];
-// 存
-//    [NSKeyedArchiver archiveRootObject:self.mod toFile:accountPath];
-// 读
-//    LSDMappingCellModel *account = [NSKeyedUnarchiver unarchiveObjectWithFile:accountPath];
-//    NSLog(@"%@",account.mapName);
-//
-//
-//测试 不用管
-//    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.mod];
-//    LSDMappingCellModel *account = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-
 
 //将对象保存到本地沙盒
 +(void)saveObjc:(NSObject*)objc name:(NSString*)name{
@@ -83,5 +68,73 @@
     //#define is_iPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
     //
     //#define is_iPad (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
+}
+- (NSString*)deviceVersion{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+    if ([platform isEqualToString:@"iPhone5,1"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,2"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,3"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone5,4"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone6,1"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone6,2"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
+    if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
+    if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s";
+    if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus";
+    if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone SE";
+    if ([platform isEqualToString:@"iPhone9,1"]) return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,3"]) return @"iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"]) return @"iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone9,4"]) return @"iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone10,1"]) return @"iPhone 8";
+    if ([platform isEqualToString:@"iPhone10,4"]) return @"iPhone 8";
+    if ([platform isEqualToString:@"iPhone10,2"]) return @"iPhone 8 Plus";
+    if ([platform isEqualToString:@"iPhone10,5"]) return @"iPhone 8 Plus";
+    if ([platform isEqualToString:@"iPhone10,3"]) return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone10,6"]) return @"iPhone X";
+    if ([platform isEqualToString:@"iPhone11,8"]) return @"iPhone XR";
+    if ([platform isEqualToString:@"iPhone11,2"]) return @"iPhone XS";
+    if ([platform isEqualToString:@"iPhone11,6"]) return @"iPhone XS Max";
+    if ([platform isEqualToString:@"iPhone11,4"]) return @"iPhone XS Max";
+    if ([platform isEqualToString:@"i386"])return@"iPhone Simulator";
+    if ([platform isEqualToString:@"x86_64"])return @"iPhone Simulator";
+    return platform;
+}
+-(void)hiddenTbaBarPushViewController:(UIViewController*)viewController{
+    self.hidesBottomBarWhenPushed=YES;
+    [self.navigationController pushViewController:viewController animated:YES];
+    self.hidesBottomBarWhenPushed=NO;
+}
+-(NSString*)judgmentScreenType{
+    int sheight =[UIScreen mainScreen].bounds.size.height;
+    int swidth =[UIScreen mainScreen].bounds.size.width;
+    int ww = swidth<sheight?swidth:sheight;
+    int hh = swidth>sheight?swidth:sheight;
+    NSLog(@"%d-%d",ww,hh);
+    NSString *sc;
+    if(ww==320&&hh==480){
+        sc = @"3.5"; //4:3 0.75
+    }else if (ww==320&&hh==568){
+        sc = @"4"; //16:9 0.56
+    }else if (ww==375&&hh==667){
+        sc = @"4.7"; //16:9 0.56
+    }else if(ww==414&&hh==736){
+        sc = @"5.5"; //16:9 0.56
+    }else if(ww==375&&hh==812){
+        sc = @"5.8"; //0.46
+    }else if(ww==414&&hh==896){
+        sc = @"6.5"; //0.46
+    }else if(ww==768&&hh==1024){ //开始平板
+        sc = @"9.7"; //0.75
+    }else if(ww==834&&hh==1112){ //开始平板
+        sc = @"10.5"; //0.78
+    }else if(ww==834&&hh==1194){ //开始平板
+        sc = @"11";  //0.69
+    }else if(ww==1024&&hh==1366){ //开始平板
+        sc = @"12.9"; //0.75
+    }
+    return sc;
 }
 @end
