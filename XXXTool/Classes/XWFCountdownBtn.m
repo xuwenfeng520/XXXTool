@@ -59,6 +59,9 @@
         [self setBackgroundColor:self.flagbackgroundColor];
         }];
     }
+    if([self.delegate respondsToSelector:@selector(didCountdownWithBtn:time:)]){
+        [self.delegate didCountdownWithBtn:self time:(int)self.countdownTime];
+    }
 }
 -(NSTimer *)time
 {

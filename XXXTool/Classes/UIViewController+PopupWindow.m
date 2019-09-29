@@ -53,7 +53,12 @@
 
 
 
-- (void)showRemindWithTitle:(NSString*)title message:(NSString*)message YESName:(NSString*)yes NOName:(NSString*)no YESBlock:(void(^)(void))YESBlock NOBlock:(void(^)(void))NOBlock{
+- (void)showRemindWithTitle:(NSString*)title
+                    message:(NSString*)message
+                    YESName:(NSString*)yes
+                     NOName:(NSString*)no
+                   YESBlock:(void(^)(void))YESBlock
+                    NOBlock:(void(^)(void))NOBlock{
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert]; //最后的参数可以改成底部下面弹窗
     
     if(yes){
@@ -71,8 +76,21 @@
     
 
     [self presentViewController:alertController animated:YES completion:nil];
-
+}
+//只有确定按钮
+- (void)showRemindWithTitle:(NSString*)title
+                    message:(NSString*)message
+                    YESName:(NSString*)yes
+                   YESBlock:(void(^)(void))YESBlock{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert]; //最后的参数可以改成底部下面弹窗
     
+    if(yes){
+        UIAlertAction *action1 = [UIAlertAction actionWithTitle:yes style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            if(YESBlock)YESBlock();
+        }];
+        [alertController addAction:action1];
+    }
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)showRemindWithmessage:(NSString*)message{

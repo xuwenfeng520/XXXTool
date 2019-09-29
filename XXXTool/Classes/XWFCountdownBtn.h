@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+
+@class XWFCountdownBtn;
+@protocol XWFCountdownBtnDelegate <NSObject>
+
+-(void)didCountdownWithBtn:(XWFCountdownBtn*)btn time:(int)time;
+
+@end
+
+
 IB_DESIGNABLE //可以预览
 @interface XWFCountdownBtn : UIButton
+@property (strong, nonatomic) id <XWFCountdownBtnDelegate>delegate;
 /**
  倒计时时间
  */

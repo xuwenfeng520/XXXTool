@@ -37,8 +37,6 @@
 
 #define viewBackgroundColor [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.00]
 
-#define XXXFirmwareName @"k30_0x0005"
-
 #define KStatusHight ([[UIApplication sharedApplication] statusBarFrame].size.height)
 #define KSNavigationBarHight (self.navigationController.navigationBar.frame.size.height)
 #define KStatusBarHight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
