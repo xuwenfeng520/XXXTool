@@ -21,4 +21,6 @@
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
 
+//颜色转图片
+-(UIImage*)createImageWithColor:(UIColor*)color;
 @end

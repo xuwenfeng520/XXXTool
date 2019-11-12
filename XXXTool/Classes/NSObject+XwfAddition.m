@@ -24,4 +24,9 @@
     
     return obj;
 }
+
+//复制对象
+-(instancetype)xxxCopy{
+    return [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:self]];
+}
 @end

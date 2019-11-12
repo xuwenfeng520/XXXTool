@@ -18,4 +18,6 @@
  *  @return 根据传入字典赋值创建返回对象
  */
 + (instancetype)xwf_objectWithDict:(NSDictionary *)dict;
+//复制对象
+-(instancetype)xxxCopy;
 @end
