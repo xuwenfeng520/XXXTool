@@ -44,8 +44,8 @@
 #define KStatusBarHight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
 
 #define KScale ([UIScreen mainScreen].scale)
-#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
-#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].nativeBounds.size.height/KScale)
+#define kScreenWidth ([UIScreen mainScreen].nativeBounds.size.width/KScale)
 
 #define kScreenWWW(xwf) (kScreenWidth<kScreenHeight?kScreenWidth:kScreenHeight)/375*xwf
 //#define kScreenHHH(xwf) kScreenHeight/667*xwf
