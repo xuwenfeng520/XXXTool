@@ -6,7 +6,7 @@
 //  Copyright © 2018年 xuwenfeng. All rights reserved.
 //
 
-#import "NSObject+Null.h"
+
 #import "NSError+Create.h"
 #import "NSNumber+String.h"
 #import "NSAttributedString+XwfAddition.h"
@@ -20,8 +20,7 @@
 #import "UIViewController+PopupWindow.h"
 #import "XWFCountdownBtn.h"
 #import "XWFEqualSpaceFlowLayout.h"
-#import "NSArray+Log.h"
-#import "NSObject+LSDView_RoundedCorners.h"
+#import "NSObject+RoundedCorners.h"
 #import "XButton.h"
 #import "xxxVerify.h"
 #import "CsCommon.h"
@@ -47,10 +46,14 @@
 #define kScreenHeight ([UIScreen mainScreen].nativeBounds.size.height/KScale)
 #define kScreenWidth ([UIScreen mainScreen].nativeBounds.size.width/KScale)
 
-#define kScreenWWW(xwf) (kScreenWidth<kScreenHeight?kScreenWidth:kScreenHeight)/375*xwf
+#define kScreenWWW(xwf) ((kScreenWidth<kScreenHeight?kScreenWidth:kScreenHeight)/375*xwf)
+#define kScreen(xwf) kScreenWWW(xwf)
 //#define kScreenHHH(xwf) kScreenHeight/667*xwf
 //#define kW(xwf) kScreenWidth/375*xwf
 //#define kH(xwf) kScreenHeight/667*xwf
+
+#define WS(wself)  __weak __typeof(&*self)wself = self
+#define weakSelf WS(wself);
 
 
 #ifdef DEBUG //开发阶段

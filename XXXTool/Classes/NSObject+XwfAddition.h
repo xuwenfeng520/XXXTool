@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (XwfAddition)
-
++ (BOOL)isNullWithObject:(id)object;
++ (BOOL)notNullWithObject:(id)object;
 /**
  *  NSArray添加分类方法中创建字典模型需用到
  *

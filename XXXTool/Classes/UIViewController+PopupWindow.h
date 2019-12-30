@@ -22,4 +22,6 @@
 - (void)showRemindWithTitle:(NSString*)title message:(NSString*)message YESName:(NSString*)yes NOName:(NSString*)no YESBlock:(void(^)(void))YESBlock NOBlock:(void(^)(void))NOBlock;
 //输入框
 -(void)showInpuWindowWithTitle:(NSString*)title message:(NSString*)mseeage inpuStr:(NSString*)inpuSrt yesStr:(NSString*)yesStr noStr:(NSString*)noStr yesBlock:(void(^)(NSString*str))yesBlock;
+
+-(void)showInpuWindowWithTitle:(NSString*)title message:(NSString*)mseeage inpuStr:(NSString*)inpuSrt yesStr:(NSString*)yesStr noStr:(NSString*)noStr yesBlock:(void(^)(NSString*str))yesBlock noBlock:(void(^)(void))noBlock;
 @end

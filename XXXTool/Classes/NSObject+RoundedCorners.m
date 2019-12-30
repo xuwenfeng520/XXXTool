@@ -6,10 +6,10 @@
 //  Copyright © 2018 xuwenfeng. All rights reserved.
 //
 
-#import "NSObject+LSDView_RoundedCorners.h"
+#import "NSObject+RoundedCorners.h"
 
-@implementation NSObject (LSDView_RoundedCorners)
--(void)configurationView:(UIView*)view withCorners:(CGFloat)corners borderWidth:(CGFloat)borderWidth borderColor:(UIColor*)borderColor{
+@implementation NSObject (RoundedCorners)
+-(void)setView:(UIView*)view withCorners:(CGFloat)corners borderWidth:(CGFloat)borderWidth borderColor:(UIColor*)borderColor{
     if(corners)view.layer.cornerRadius=corners;
     if(borderWidth)view.layer.borderWidth = borderWidth;
     if(borderColor)view.layer.borderColor = borderColor.CGColor;

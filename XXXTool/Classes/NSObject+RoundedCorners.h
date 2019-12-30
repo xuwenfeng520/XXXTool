@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface NSObject (LSDView_RoundedCorners)
--(void)configurationView:(UIView*)view withCorners:(CGFloat)corners borderWidth:(CGFloat)borderWidth borderColor:(UIColor*)borderColor;
+@interface NSObject (RoundedCorners)
+-(void)setView:(UIView*)view withCorners:(CGFloat)corners borderWidth:(CGFloat)borderWidth borderColor:(UIColor*)borderColor;
 @end

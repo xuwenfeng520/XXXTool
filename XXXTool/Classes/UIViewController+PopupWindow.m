@@ -110,9 +110,10 @@
 //        if(yesBlock)yesBlock(@"很黄很暴力");
         
     }]];
-    
-    //增加取消按钮；
-    [alertController addAction:[UIAlertAction actionWithTitle:noStr style:UIAlertActionStyleDefault handler:nil]];
+    if(noStr){
+        //增加取消按钮；
+        [alertController addAction:[UIAlertAction actionWithTitle:noStr style:UIAlertActionStyleDefault handler:nil]];
+    }
     
     //定义第一个输入框；
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
@@ -121,5 +122,33 @@
     [self presentViewController:alertController animated:true completion:nil];
 
 }
+
+-(void)showInpuWindowWithTitle:(NSString*)title message:(NSString*)mseeage inpuStr:(NSString*)inpuSrt yesStr:(NSString*)yesStr noStr:(NSString*)noStr yesBlock:(void(^)(NSString*str))yesBlock noBlock:(void(^)(void))noBlock{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:mseeage preferredStyle:UIAlertControllerStyleAlert];
+    //增加确定按钮；
+    [alertController addAction:[UIAlertAction actionWithTitle:yesStr style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //获取第1个输入框；
+        UITextField *userNameTextField = alertController.textFields.firstObject;
+        NSString *strr = userNameTextField.text;
+        if(strr.length<1)strr = nil;
+        if(yesBlock)yesBlock(strr);
+//        if(yesBlock)yesBlock(@"很黄很暴力");
+        
+    }]];
+    if(noStr){
+        //增加取消按钮；
+        [alertController addAction:[UIAlertAction actionWithTitle:noStr style:UIAlertActionStyleDefault handler:nil]];
+        if(noBlock)noBlock();
+    }
+    
+    //定义第一个输入框；
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = inpuSrt;
+    }];
+    [self presentViewController:alertController animated:true completion:nil];
+
+}
+
+
 
 @end

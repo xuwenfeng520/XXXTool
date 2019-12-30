@@ -9,7 +9,38 @@
 #import "NSObject+XwfAddition.h"
 
 @implementation NSObject (XwfAddition)
-
++ (BOOL)isNullWithObject:(id)object{
+    if (object == nil) {
+        return YES;
+    }
+    if ([object isEqual:[NSNull null]]) {
+        return YES;
+    }
+    if ([object isKindOfClass:[NSString class]]) {
+        if ([object isEqualToString:@""]) {
+            return YES;
+        }
+    }
+    if ([object isKindOfClass:[NSArray class]]) {
+        if ([object count] == 0) {
+            return YES;
+        }
+    }
+    if ([object isKindOfClass:[NSDictionary class]]) {
+        if ([object count] == 0) {
+            return YES;
+        }
+    }
+    if ([object isKindOfClass:[NSSet class]]) {
+        if ([object count] == 0) {
+            return YES;
+        }
+    }
+    return NO;
+}
++ (BOOL)notNullWithObject:(id)object{
+    return ![self isNullWithObject:object];
+}
 
 /// 使用字典创建模型对象
 ///

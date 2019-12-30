@@ -18,7 +18,7 @@
 
 IB_DESIGNABLE //可以预览
 @interface XWFCountdownBtn : UIButton
-@property (strong, nonatomic) id <XWFCountdownBtnDelegate>delegate;
+@property (assign, nonatomic) id <XWFCountdownBtnDelegate>delegate;
 /**
  倒计时时间
  */

@@ -21,3 +21,8 @@
  */
 + (NSArray *)xwf_objectListWithPlistName:(NSString *)plistName clsName:(NSString *)clsName;
 @end
+
+
+@interface NSDictionary (Log)
+
+@end
