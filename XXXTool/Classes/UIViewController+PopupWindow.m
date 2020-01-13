@@ -117,7 +117,7 @@
     
     //定义第一个输入框；
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = inpuSrt;
+        textField.text = inpuSrt;
     }];
     [self presentViewController:alertController animated:true completion:nil];
 

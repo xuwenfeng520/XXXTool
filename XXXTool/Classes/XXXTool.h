@@ -26,6 +26,7 @@
 #import "CsCommon.h"
 #import "UIButton+XwfAddition.h"
 #import "UIViewController+XwfAddition.h"
+#import "XXXTimer.h"
 
 
 
@@ -42,7 +43,7 @@
 #define KSNavigationBarHight (self.navigationController.navigationBar.frame.size.height)
 #define KStatusBarHight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
 
-#define KScale ([UIScreen mainScreen].scale)
+#define KScale ([UIScreen mainScreen].nativeScale)
 #define kScreenHeight ([UIScreen mainScreen].nativeBounds.size.height/KScale)
 #define kScreenWidth ([UIScreen mainScreen].nativeBounds.size.width/KScale)
 
