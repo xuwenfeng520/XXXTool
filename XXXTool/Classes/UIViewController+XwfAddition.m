@@ -137,4 +137,42 @@
     }
     return sc;
 }
+
+
+- (void)addBorderToLayer:(UIView *)view
+{
+    CAShapeLayer *border = [CAShapeLayer layer];
+    
+    border.strokeColor = [UIColor blackColor].CGColor;
+    
+    border.fillColor = nil;
+    
+    border.path = [UIBezierPath bezierPathWithRect:view.bounds].CGPath;
+    
+    border.frame = view.bounds;
+    
+    border.lineWidth = 2;
+    
+    border.lineCap = @"square";
+    
+    border.lineDashPattern = @[@16, @7];
+    
+    [view.layer addSublayer:border];
+}
+
+
+- (void)addlineToLayer:(UIView *)view aPoint:(CGPoint)aPoint bPoint:(CGPoint)bPoint color:(UIColor*)color
+{
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:aPoint];
+    [path addLineToPoint:bPoint];
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.frame = view.frame;
+    layer.lineJoin = kCALineJoinMiter;
+    layer.lineDashPattern = @[@(5),@(5)];
+    layer.fillColor = [UIColor clearColor].CGColor;
+    layer.strokeColor = color.CGColor;
+    layer.path = path.CGPath;
+    [view.layer addSublayer:layer];
+}
 @end

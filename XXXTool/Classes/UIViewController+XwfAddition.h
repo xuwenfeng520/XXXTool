@@ -31,5 +31,10 @@
 -(void)hiddenTbaBarPushViewController:(UIViewController*)viewController;
 //判断屏幕类型尺寸
 -(NSString*)judgmentScreenType;
+
+
+//画虚线
+- (void)addBorderToLayer:(UIView *)view;
+
 @end
 
