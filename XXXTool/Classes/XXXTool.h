@@ -6,7 +6,6 @@
 //  Copyright © 2018年 xuwenfeng. All rights reserved.
 //
 
-
 #import "NSError+Create.h"
 #import "NSNumber+String.h"
 #import "NSAttributedString+XwfAddition.h"
@@ -39,6 +38,7 @@
 
 #define viewBackgroundColor [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor2 [UIColor colorWithRed:1 green:0.91 blue:0.91 alpha:1.00]
+#define viewBackgroundColor3 [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:0.3]
 
 
 #define KStatusHight ([[UIApplication sharedApplication] statusBarFrame].size.height)
