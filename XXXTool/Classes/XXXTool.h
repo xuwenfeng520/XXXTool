@@ -26,7 +26,7 @@
 #import "UIButton+XwfAddition.h"
 #import "UIViewController+XwfAddition.h"
 #import "XXXTimer.h"
-
+//#import "LSDNetworkTool.h"
 
 
 #define loadStr(key) [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"Language"]
@@ -35,6 +35,7 @@
 
 #define logoOrange [UIColor colorWithRed:0.94 green:0.48 blue:0.18 alpha:1.00]
 #define tabOrange [UIColor colorWithRed:1.00 green:0.44 blue:0.15 alpha:1.00]
+
 
 #define viewBackgroundColor [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor2 [UIColor colorWithRed:1 green:0.91 blue:0.91 alpha:1.00]

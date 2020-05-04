@@ -31,7 +31,6 @@
 		7A3B1AD922FA5C5B00D4A942 /* UIViewController+XwfAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B1AD822FA5C5B00D4A942 /* UIViewController+XwfAddition.m */; };
 		7A8AF69624348C950059257E /* XXXTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AF69124348C950059257E /* XXXTimer.m */; };
 		7A8AF69724348C950059257E /* NSObject+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */; };
-		7A8AF69824348C950059257E /* NSData+CRC16.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AF69424348C950059257E /* NSData+CRC16.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +80,6 @@
 		7A8AF69024348C950059257E /* XXXTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXXTimer.h; sourceTree = "<group>"; };
 		7A8AF69124348C950059257E /* XXXTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXXTimer.m; sourceTree = "<group>"; };
 		7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RoundedCorners.m"; sourceTree = "<group>"; };
-		7A8AF69324348C950059257E /* NSData+CRC16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC16.h"; sourceTree = "<group>"; };
-		7A8AF69424348C950059257E /* NSData+CRC16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC16.m"; sourceTree = "<group>"; };
 		7A8AF69524348C950059257E /* NSObject+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RoundedCorners.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				7A3B1A8422F11EA400D4A942 /* XXXTool.h */,
-				7A8AF69324348C950059257E /* NSData+CRC16.h */,
-				7A8AF69424348C950059257E /* NSData+CRC16.m */,
 				7A8AF69524348C950059257E /* NSObject+RoundedCorners.h */,
 				7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */,
 				7A8AF69024348C950059257E /* XXXTimer.h */,
@@ -258,7 +253,6 @@
 				7A3B1A9222F11EA500D4A942 /* XWFCountdownBtn.m in Sources */,
 				7A8AF69624348C950059257E /* XXXTimer.m in Sources */,
 				7A3B1A9622F11EA500D4A942 /* UIColor+XwfAddition.m in Sources */,
-				7A8AF69824348C950059257E /* NSData+CRC16.m in Sources */,
 				7A3B1A9122F11EA500D4A942 /* XWFEqualSpaceFlowLayout.m in Sources */,
 				7A3B1AD622FA5C1A00D4A942 /* UIButton+XwfAddition.m in Sources */,
 				7A3B1AD322FA5A0700D4A942 /* CsCommon.m in Sources */,
@@ -410,13 +404,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9N685QFQ2;
+				DEVELOPMENT_TEAM = 9NR9B6QX4P;
 				INFOPLIST_FILE = XXXTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xwf.XXXTool;
+				PRODUCT_BUNDLE_IDENTIFIER = XXXTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,13 +421,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z9N685QFQ2;
+				DEVELOPMENT_TEAM = 9NR9B6QX4P;
 				INFOPLIST_FILE = XXXTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xwf.XXXTool;
+				PRODUCT_BUNDLE_IDENTIFIER = XXXTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

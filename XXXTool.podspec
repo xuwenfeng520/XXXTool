@@ -23,6 +23,8 @@ Pod::Spec.new do |spec|
 spec.source_files  = "XXXTool/Classes/**/*"
 #spec.source_files  = "XXXTool","XXXTool/Classes/**/*"
 
-  # spec.dependency "JSONKit", "~> 1.4"
+
+  spec.dependency 'AFNetworking'
+
 
 end
