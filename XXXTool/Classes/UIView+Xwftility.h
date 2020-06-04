@@ -23,4 +23,9 @@
 
 //颜色转图片
 -(UIImage*)createImageWithColor:(UIColor*)color;
+//快速创建颜色图片
++(UIView*)xxxViewWithColor:(UIColor*)color;
+
+-(void)xxxSetCornerRadius:(int)radius line:(int)line lineColor:(UIColor*)color;
+-(void)xxxSetCornerRadius:(int)radius;
 @end

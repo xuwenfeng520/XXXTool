@@ -40,11 +40,13 @@
 #define viewBackgroundColor [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor2 [UIColor colorWithRed:1 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor3 [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:0.3]
+#define TextColor [UIColor colorWithHexString:@"979797"]
 
 
 #define KStatusHight ([[UIApplication sharedApplication] statusBarFrame].size.height)
 #define KSNavigationBarHight (self.navigationController.navigationBar.frame.size.height)
 #define KStatusBarHight  (self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height)
+#define KTabBarHight (self.tabBarController.tabBar.bounds.size.height)
 
 #define KScale ([UIScreen mainScreen].nativeScale)
 #define kScreenHeight ([UIScreen mainScreen].nativeBounds.size.height/KScale)
@@ -55,6 +57,11 @@
 //#define kScreenHHH(xwf) kScreenHeight/667*xwf
 //#define kW(xwf) kScreenWidth/375*xwf
 //#define kH(xwf) kScreenHeight/667*xwf
+
+#define KScaleHHH(xwf) (kScreenHeight*xwf)
+#define kSH(xwf) (KScaleHHH(xwf/1000))
+#define KScaleWWW(xwf) (kScreenWidth*xwf)
+#define kSW(xwf) (KScaleWWW(xwf/1000))
 
 #define WS(wself)  __weak __typeof(&*self)wself = self
 #define weakSelf WS(wself);

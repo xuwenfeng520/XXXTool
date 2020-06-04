@@ -117,4 +117,22 @@
     UIGraphicsEndImageContext();
     return theImage;
 }
+
+//快速创建颜色图片
++(UIView*)xxxViewWithColor:(UIColor*)color{
+    UIView *temp = [UIView new];
+    temp.backgroundColor = color;
+    return temp;
+}
+
+-(void)xxxSetCornerRadius:(int)radius line:(int)line lineColor:(UIColor*)color{
+    if(radius)self.layer.cornerRadius=radius;
+    if(line)self.layer.borderWidth=line;
+    if(color)self.layer.borderColor = color.CGColor;
+    self.layer.masksToBounds = YES;
+}
+-(void)xxxSetCornerRadius:(int)radius{
+    if(radius)self.layer.cornerRadius=radius;
+    self.layer.masksToBounds = YES;
+}
 @end
