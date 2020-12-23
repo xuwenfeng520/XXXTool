@@ -28,4 +28,6 @@
 
 -(void)xxxSetCornerRadius:(int)radius line:(int)line lineColor:(UIColor*)color;
 -(void)xxxSetCornerRadius:(int)radius;
+//更改图片大小 等比率缩放
+- (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize;
 @end

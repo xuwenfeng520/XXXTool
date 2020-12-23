@@ -33,7 +33,9 @@
 
 #define xwfColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
 
-#define logoOrange [UIColor colorWithRed:0.94 green:0.48 blue:0.18 alpha:1.00]
+#define logoOrange [UIColor colorWithHexString:@"fd9b1c"]
+//#define logoOrange [UIColor colorWithRed:0.94 green:0.48 blue:0.18 alpha:1.00]
+
 #define tabOrange [UIColor colorWithRed:1.00 green:0.44 blue:0.15 alpha:1.00]
 
 
@@ -52,16 +54,16 @@
 #define kScreenHeight ([UIScreen mainScreen].nativeBounds.size.height/KScale)
 #define kScreenWidth ([UIScreen mainScreen].nativeBounds.size.width/KScale)
 
-#define kScreenWWW(xwf) ((kScreenWidth<kScreenHeight?kScreenWidth:kScreenHeight)/375*xwf)
-#define kScreen(xwf) kScreenWWW(xwf)
-//#define kScreenHHH(xwf) kScreenHeight/667*xwf
-//#define kW(xwf) kScreenWidth/375*xwf
-//#define kH(xwf) kScreenHeight/667*xwf
+#define kScreenWWW(xwf) ((kScreenWidth<kScreenHeight?kScreenWidth:kScreenHeight)/375*xwf)  //废弃
+#define kScreen(xwf) kScreenWWW(xwf)  //废弃
 
 #define KScaleHHH(xwf) (kScreenHeight*xwf)
-#define kSH(xwf) (KScaleHHH(xwf/1000))
 #define KScaleWWW(xwf) (kScreenWidth*xwf)
-#define kSW(xwf) (KScaleWWW(xwf/1000))
+#define kSH(xwf) (KScaleHHH(xwf/1000)) //废弃
+#define kSW(xwf) (KScaleWWW(xwf/1000)) //废弃
+#define kh(xwf) (KScaleHHH(xwf/812))
+#define kw(xwf) (KScaleWWW(xwf/375))
+#define kt(xwf) (KScaleHHH(xwf/812))
 
 #define WS(wself)  __weak __typeof(&*self)wself = self
 #define weakSelf WS(wself);

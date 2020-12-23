@@ -7,7 +7,7 @@
 //
 
 #import "UILabel+XwfAddition.h"
-
+#import "NSObject+XwfAddition.h"
 @implementation UILabel (XwfAddition)
     /*
      这个方法相当于给UILabel添加了一个快速创建它对象的类方法，并且有指定构造参数
@@ -34,6 +34,9 @@
 }
     
 +(UILabel*)xxxLabelCreateWithStr:(NSString*)str Color:(UIColor*)Color Font:(CGFloat)Font{
+//    BOOL isnull = [str isKindOfClass:[NSNull class]];
+//    NSLog(@"是否%d",isnull);
+//    str = [str isKindOfClass:[NSNull class]]?@"":str;
     UILabel *lab = [UILabel new];
     lab.text = str;
     lab.textColor = Color;

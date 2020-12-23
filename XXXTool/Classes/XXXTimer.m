@@ -29,6 +29,7 @@
     if(self.timer){
         [self stop];
     }
+    [self countdown];
     _timer = [NSTimer scheduledTimerWithTimeInterval:interval target:self selector:@selector(countdown) userInfo:nil repeats:YES];
 }
 -(void)stop{

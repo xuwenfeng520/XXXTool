@@ -8,18 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 @interface UIButton (XwfAddition)
-    /**
-     图片按钮
-     
-     @param ImageName 图片
-     @param target self
-     @param action 方法
-     @return 按钮
-     */
+
 +(UIButton*)xxxButtonCreateWithImageName:(NSString*)ImageName target:(nullable id)target action:(SEL)action;
+
++(UIButton*)xxxButtonCreateWithTitle:(NSString *)title color:(UIColor*)color font:(CGFloat)font target:(id)target action:(SEL)action;
+
+-(void)xxxButtonSetTitle:(NSString *)title color:(UIColor*)color font:(CGFloat)font fstate:(UIControlState)state;
 @end
 
-NS_ASSUME_NONNULL_END
+
