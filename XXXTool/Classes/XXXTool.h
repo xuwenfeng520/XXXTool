@@ -42,6 +42,7 @@
 #define viewBackgroundColor [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor2 [UIColor colorWithRed:1 green:0.91 blue:0.91 alpha:1.00]
 #define viewBackgroundColor3 [UIColor colorWithRed:0.91 green:0.91 blue:0.91 alpha:0.3]
+
 #define TextColor [UIColor colorWithHexString:@"979797"]
 
 
@@ -61,6 +62,7 @@
 #define KScaleWWW(xwf) (kScreenWidth*xwf)
 #define kSH(xwf) (KScaleHHH(xwf/1000)) //废弃
 #define kSW(xwf) (KScaleWWW(xwf/1000)) //废弃
+
 #define kh(xwf) (KScaleHHH(xwf/812))
 #define kw(xwf) (KScaleWWW(xwf/375))
 #define kt(xwf) (KScaleHHH(xwf/812))

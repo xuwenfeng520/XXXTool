@@ -25,6 +25,7 @@ spec.source_files  = "XXXTool/Classes/**/*"
 
 
   spec.dependency 'AFNetworking'
+  spec.dependency 'MBProgressHUD'
 
 
 end

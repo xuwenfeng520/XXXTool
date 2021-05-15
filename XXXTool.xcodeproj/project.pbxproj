@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A1371152644C8A0009DCA29 /* XXXBasisVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1371122644C8A0009DCA29 /* XXXBasisVC.m */; };
+		7A1371392644CB86009DCA29 /* MBProgressHUD+YK.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1371352644CB86009DCA29 /* MBProgressHUD+YK.m */; };
+		7A13713A2644CB86009DCA29 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1371362644CB86009DCA29 /* UIViewController+HUD.m */; };
 		7A3B1A4722F11C0800D4A942 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B1A4622F11C0800D4A942 /* AppDelegate.m */; };
 		7A3B1A4A22F11C0800D4A942 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B1A4922F11C0800D4A942 /* ViewController.m */; };
 		7A3B1A4D22F11C0800D4A942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B1A4B22F11C0800D4A942 /* Main.storyboard */; };
@@ -31,9 +34,18 @@
 		7A3B1AD922FA5C5B00D4A942 /* UIViewController+XwfAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B1AD822FA5C5B00D4A942 /* UIViewController+XwfAddition.m */; };
 		7A8AF69624348C950059257E /* XXXTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AF69124348C950059257E /* XXXTimer.m */; };
 		7A8AF69724348C950059257E /* NSObject+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */; };
+		E76F3F86BBD7446C5CC9C08E /* libPods-XXXTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B542B1225F8038CE671CE7B /* libPods-XXXTool.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B542B1225F8038CE671CE7B /* libPods-XXXTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XXXTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7080461465B3E17034ECDDAB /* Pods-XXXTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXXTool.release.xcconfig"; path = "Target Support Files/Pods-XXXTool/Pods-XXXTool.release.xcconfig"; sourceTree = "<group>"; };
+		7A1371112644C8A0009DCA29 /* XXXBasisVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXXBasisVC.h; path = XXXTool/Classes/XXXBasisVC.h; sourceTree = SOURCE_ROOT; };
+		7A1371122644C8A0009DCA29 /* XXXBasisVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXXBasisVC.m; path = XXXTool/Classes/XXXBasisVC.m; sourceTree = SOURCE_ROOT; };
+		7A1371352644CB86009DCA29 /* MBProgressHUD+YK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YK.m"; sourceTree = "<group>"; };
+		7A1371362644CB86009DCA29 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		7A1371372644CB86009DCA29 /* MBProgressHUD+YK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YK.h"; sourceTree = "<group>"; };
+		7A1371382644CB86009DCA29 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		7A3B1A4222F11C0800D4A942 /* XXXTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXXTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3B1A4522F11C0800D4A942 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7A3B1A4622F11C0800D4A942 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 		7A8AF69124348C950059257E /* XXXTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXXTimer.m; sourceTree = "<group>"; };
 		7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RoundedCorners.m"; sourceTree = "<group>"; };
 		7A8AF69524348C950059257E /* NSObject+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RoundedCorners.h"; sourceTree = "<group>"; };
+		F9F5889361E3230BED35A225 /* Pods-XXXTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXXTool.debug.xcconfig"; path = "Target Support Files/Pods-XXXTool/Pods-XXXTool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +101,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76F3F86BBD7446C5CC9C08E /* libPods-XXXTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7EA06436D4E561A100C9EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9F5889361E3230BED35A225 /* Pods-XXXTool.debug.xcconfig */,
+				7080461465B3E17034ECDDAB /* Pods-XXXTool.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A13710B2644C861009DCA29 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				7A1371372644CB86009DCA29 /* MBProgressHUD+YK.h */,
+				7A1371352644CB86009DCA29 /* MBProgressHUD+YK.m */,
+				7A1371382644CB86009DCA29 /* UIViewController+HUD.h */,
+				7A1371362644CB86009DCA29 /* UIViewController+HUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 		7A3B1A3922F11C0800D4A942 = {
 			isa = PBXGroup;
 			children = (
 				7A3B1A4422F11C0800D4A942 /* XXXTool */,
 				7A3B1A4322F11C0800D4A942 /* Products */,
+				2C7EA06436D4E561A100C9EA /* Pods */,
+				D0B165380542961A9B826083 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +167,10 @@
 		7A3B1A6022F11E7900D4A942 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7A13710B2644C861009DCA29 /* HUD */,
 				7A3B1A8422F11EA400D4A942 /* XXXTool.h */,
+				7A1371112644C8A0009DCA29 /* XXXBasisVC.h */,
+				7A1371122644C8A0009DCA29 /* XXXBasisVC.m */,
 				7A8AF69524348C950059257E /* NSObject+RoundedCorners.h */,
 				7A8AF69224348C950059257E /* NSObject+RoundedCorners.m */,
 				7A8AF69024348C950059257E /* XXXTimer.h */,
@@ -171,6 +211,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		D0B165380542961A9B826083 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B542B1225F8038CE671CE7B /* libPods-XXXTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A3B1A5822F11C0A00D4A942 /* Build configuration list for PBXNativeTarget "XXXTool" */;
 			buildPhases = (
+				8F210B9DE46595B1FFB52187 /* [CP] Check Pods Manifest.lock */,
 				7A3B1A3E22F11C0800D4A942 /* Sources */,
 				7A3B1A3F22F11C0800D4A942 /* Frameworks */,
 				7A3B1A4022F11C0800D4A942 /* Resources */,
@@ -236,11 +285,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F210B9DE46595B1FFB52187 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XXXTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7A3B1A3E22F11C0800D4A942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1371392644CB86009DCA29 /* MBProgressHUD+YK.m in Sources */,
 				7A3B1A8F22F11EA500D4A942 /* UIViewController+PopupWindow.m in Sources */,
 				7A3B1A9B22F11EA500D4A942 /* NSObject+XwfAddition.m in Sources */,
 				7A3B1A4A22F11C0800D4A942 /* ViewController.m in Sources */,
@@ -250,6 +325,7 @@
 				7A3B1AD922FA5C5B00D4A942 /* UIViewController+XwfAddition.m in Sources */,
 				7A3B1A8C22F11EA500D4A942 /* NSArray+XwfAddition.m in Sources */,
 				7A3B1A9422F11EA500D4A942 /* UIView+Xwftility.m in Sources */,
+				7A1371152644C8A0009DCA29 /* XXXBasisVC.m in Sources */,
 				7A3B1A9222F11EA500D4A942 /* XWFCountdownBtn.m in Sources */,
 				7A8AF69624348C950059257E /* XXXTimer.m in Sources */,
 				7A3B1A9622F11EA500D4A942 /* UIColor+XwfAddition.m in Sources */,
@@ -257,6 +333,7 @@
 				7A3B1AD622FA5C1A00D4A942 /* UIButton+XwfAddition.m in Sources */,
 				7A3B1AD322FA5A0700D4A942 /* CsCommon.m in Sources */,
 				7A3B1A4722F11C0800D4A942 /* AppDelegate.m in Sources */,
+				7A13713A2644CB86009DCA29 /* UIViewController+HUD.m in Sources */,
 				7A3B1A9522F11EA500D4A942 /* NSError+Create.m in Sources */,
 				7A3B1A9922F11EA500D4A942 /* XButton.m in Sources */,
 				7A3B1A9A22F11EA500D4A942 /* UILabel+XwfAddition.m in Sources */,
@@ -401,6 +478,7 @@
 		};
 		7A3B1A5922F11C0A00D4A942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F5889361E3230BED35A225 /* Pods-XXXTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +497,7 @@
 		};
 		7A3B1A5A22F11C0A00D4A942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7080461465B3E17034ECDDAB /* Pods-XXXTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
